@@ -1,9 +1,37 @@
 using System;
+using System.Data;
 
-class Program
+public class Fractions
 {
-    static void Main(string[] args)
+    private int _top;
+    private int _bottom;
+
+    public Fractions()
     {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
+        _top = 1;
+        _bottom = 1;
+    }
+
+    public Fractions(int wholeNumber)
+    {
+        _top = wholeNumber;
+        _bottom = 1;
+    }
+
+    public Fractions(int top, int bottom)
+    {
+        _top = top;
+        _bottom = bottom;
+    }
+
+    public string GetFractionString()
+    {
+        string text = $"{_top}/{_bottom}";
+        return text;
+    }
+
+    public double GetDecimalValue()
+    {
+        return(double)_top / (double)_bottom;
     }
 }
