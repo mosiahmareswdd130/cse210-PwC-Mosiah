@@ -1,0 +1,39 @@
+using System.IO.Compression;
+
+namespace OnlineOrdering;
+
+public class Address
+{
+    private string _street;
+    private string _stateProvince;
+    private string _city;
+    private string _country;
+
+public Address( string street, string stateProvince, string city, string country)
+{
+        _street = street;
+        _stateProvince = stateProvince;
+        _city = city;
+        _country = country;
+}
+
+public string GetStreet() => _street;
+public string GetStateProvince() => _stateProvince;
+public string GetCity() => _city;
+public string GetCountry() => _country;
+
+public void SetStreet(string street) => _street = street;
+public void SetCity(string city) => _city = city;
+public void SetStateProvince(string stateProvince) => _stateProvince = stateProvince;
+public void SetCountry(string country) => _country = country;
+
+
+public bool IsInUsa() => _country.ToUpper() == "USA";
+
+
+public string GetFullAddress()
+    {
+        return $"{_street}{_city}, {_stateProvince} {_country}";
+    }
+
+}
