@@ -13,9 +13,7 @@ public class Customer
 
      public string GetName() => _name;
      public Address GetAddress() => _address;
-
-     public void SetName(string name) => name =_name;
-     public void SetAddres(Address address) => address = _address;
-
+     public void SetName(string name) => _name =name;
+     public void SetAddress(Address address) => _address = address;
      public bool LivesInUsa() => _address.IsInUsa();
 }

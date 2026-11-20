@@ -1,6 +1,4 @@
-
 namespace OnlineOrdering;
-
 
 public class Product
 {
@@ -16,19 +14,16 @@ public class Product
         _pricePerUnit = pricePerUnit;
         _quantity = quantity;
     }
-
     // Getters
     public string GetName() => _name;
     public string GetProductId() => _productId;
     public double GetPricePerUnit() => _pricePerUnit;
     public int GetQuantity() => _quantity;
-
     // Setters
     public void SetName(string name) => _name = name;
     public void SetProductId(string productId) => _productId = productId;
     public void SetPricePerUnit(double pricePerUnit) => _pricePerUnit = pricePerUnit;
     public void SetQuantity(int quantity) => _quantity = quantity;
-
 
     public double GetTotalCost() => _pricePerUnit * _quantity;
 }

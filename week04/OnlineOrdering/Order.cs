@@ -17,13 +17,8 @@ public class Order
 
     public Customer GetCustomer() => _customer;
     public List<Product> GetProducts() => _products;
-
-
     public void SetCustomer(Customer customer) => _customer = customer;
-
-
     public void AddProduct(Product product) => _products.Add(product);
-
 
     public double GetTotalCost()
     {
@@ -37,7 +32,6 @@ public class Order
         return productTotal + shippingCost;
     }
 
-
     public string GetPackingLabel()
     {
         string label = "** Packing Label **\n";
@@ -47,7 +41,6 @@ public class Order
         }
         return label.TrimEnd();
     }
-
 
     public string GetShippingLabel()
     {
