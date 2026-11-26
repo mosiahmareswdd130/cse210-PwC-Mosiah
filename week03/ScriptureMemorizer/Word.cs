@@ -25,7 +25,7 @@ public class Word
 
         for (int i = _text.Length - 1; i >= 0; i--)
         {
-            if (char.IsLetter(_text[i]) || char.IsDigit(_text[i]));
+            if (char.IsLetter(_text[i]) || char.IsDigit(_text[i]))
                 break;
             punctuation = _text[i] + punctuation;
         }

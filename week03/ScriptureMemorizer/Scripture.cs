@@ -18,7 +18,7 @@ public class Scripture
                     .ToList();
     }
 
-    public bool IsFullyHidden => _words.All(w=> !w.IsHidden);
+    public bool IsFullyHidden => _words.All(w=> w.IsHidden);
     
     public void HideRandomWords()
     {

@@ -6,7 +6,7 @@ var scripture = library.GetRandomScripture();
 
 while (true)
 {
-    Console.Clear();
+    //Console.Clear();
     Console.WriteLine(scripture.GetDisplayText());
     Console.WriteLine();
 
